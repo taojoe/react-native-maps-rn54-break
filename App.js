@@ -11,7 +11,7 @@ import {
   Text,
   View
 } from 'react-native';
-import MapView from 'react-native-maps';
+import MapView,  { PROVIDER_GOOGLE } from 'react-native-maps';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -22,7 +22,21 @@ const instructions = Platform.select({
 
 type Props = {};
 export default class App extends Component<Props> {
-  render() {
+  render(){
+    return (
+      <MapView
+        style={{flex:1}}
+        provider={PROVIDER_GOOGLE}
+        initialRegion={{
+          latitude: 39.9481,
+          longitude: 116.3716,
+          latitudeDelta: 0.0922,
+          longitudeDelta: 0.0421,
+        }}
+      />
+    );
+  }
+  render1() {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>

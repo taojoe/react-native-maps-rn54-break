@@ -4180,9 +4180,9 @@ react-devtools-core@3.1.0:
     shell-quote "^1.6.1"
     ws "^2.0.3"
 
-react-native-maps@^0.20.1:
+"react-native-maps@https://github.com/react-community/react-native-maps.git":
   version "0.20.1"
-  resolved "https://registry.yarnpkg.com/react-native-maps/-/react-native-maps-0.20.1.tgz#b5247a9a26446b2e1ffc3f680db8ba6ccc960096"
+  resolved "https://github.com/react-community/react-native-maps.git#637cfcdb1f5bac3bd734bcf629c4ba83e6479cfb"
   dependencies:
     babel-plugin-module-resolver "^2.3.0"
     babel-preset-react-native "1.9.0"
